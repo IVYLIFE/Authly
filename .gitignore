@@ -1,0 +1,32 @@
+# Node.js dependencies
+/node_modules/
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Environment variables
+.env
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# npm package lock file (if you want to regenerate it with npm install)
+package-lock.json
+
+# Temporary files
+*.swp
+*.swo
+
+# IDE files (e.g., VS Code, WebStorm)
+.vscode/
+.idea/
+
+# Build/Distribution directories
+/dist/
+/build/
+
+# Testing directories (if you're using a testing framework)
+/coverage/
