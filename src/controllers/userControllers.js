@@ -70,14 +70,7 @@ const loginUser = async (req, res) => {
             return res.status(404).json({ message: "No user exists with that email" });
         }
 
-        console.log("User:", user);
-        console.log("Password:", password.trim());
-        console.log("User password:", user.password);
-
-        const isPasswordValid = await bcrypt.compare(password, user.password);
-        console.log("Password valid:", isPasswordValid);
-
-
+        const isPasswordValid = await bcrypt.compare(password.trim(), user.password);
         if (!isPasswordValid) {
             return res.status(401).json({ message: "Invalid email or password" });
         }
