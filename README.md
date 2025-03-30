@@ -33,7 +33,6 @@ git clone https://github.com/IVYLIFE/Authly.git
 Navigate to the project directory and install the required dependencies.
 
 ```bash
-cd user-auth-api
 npm install
 ```
 
